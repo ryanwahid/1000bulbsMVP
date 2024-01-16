@@ -17,5 +17,8 @@ describe('1000bulbs Search Functionality Test', () => {
 
         // Assert that the output text includes "c9 led bulbs"
         cy.get('.new-filter-results-show > strong').should('include.text', 'c9 led bulbs');
+
+        // Take a screenshot of the page after the search
+        cy.screenshot('search-results');
     });
 });
